@@ -44,23 +44,12 @@ exit;
 		
 		@keyframes verticalanim {
 			0% {
-				transform: translateX(-55px);
+				transform: rotate(50deg);
 			}
-			
-			25% {
-				transform: translateY(-155px);
-			}
-			
-			50% {
-				transform: translateY(-655px);
-			}
-			
-			75% {
-				transform: translate(100px, -55px);
-			}
-			
 			100% {
-				transform: translateY(-255px);
+				transform: rotate(90deg);
+				
+				background-color: red;
 			}
 		}
 		
@@ -80,9 +69,7 @@ exit;
 	</style>
 </head>
 <body>
-<main>
 	<h3> Welcome <?php echo $_SESSION["user_name"]; ?> san</h3>
 	<a href="dblogout.php" class="logout">ログアウト</a>
-</main>
 </body>
 </html>
