@@ -47,7 +47,7 @@ if($error_message){
 }
 ?>
 
-<form action="dblogin.php" method="post">
+<form action="" method="post">
  <p>Login ID:<input type="text" name="user_name"></p>
  <p>Password:<input type="password" name="password"></p>
  <input type="submit" name="login" value="Login">
