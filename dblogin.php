@@ -20,7 +20,7 @@ if(isset($_POST["login"])){//loginフォームから入力したデータを取�
 
         $result =$sth->fetch(PDO::FETCH_ASSOC);
         if(strcmp($password, $result["password"]) === 0){
-            print "Login success";
+            echo "Login success";
                 //ログインしている場合は、ページ変遷が起きないための処理    
             $_SESSION["user_name"]=$_POST["user_name"];
             $mypage_url="dbmypage.php";
